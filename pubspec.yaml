@@ -1,0 +1,67 @@
+name: alarm_app
+description: A powerful task-based alarm clock application
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+
+  # Sensors
+  sensors_plus: ^7.0.0
+
+  # Audio
+  audioplayers: ^6.7.1
+
+  # Localization
+  intl: ^0.20.2
+
+  # UI
+  fl_chart: ^0.66.0
+  # Utils
+  uuid: ^4.3.3
+
+  # Testing
+  mockito: ^5.4.4
+  build_runner: ^2.4.8
+
+  # Architecture
+  get_it: ^7.6.7
+
+  # Logging
+  logger: ^2.0.2+1
+
+dependency_overrides:
+  # Resolve conflicts
+  meta: ^1.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
+
+flutter_intl:
+  enabled: true
+  class_name: AppLocalizations
+  main_locale: en
+  arb_dir: lib/l10n
+  output_dir: lib/generated
+  use_deferred_loading: false
