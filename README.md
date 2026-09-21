@@ -1,6 +1,10 @@
 # Alarm App
 
-A powerful, task-based alarm clock application built with Flutter. Inspired by Alarmy, this app ensures you wake up by requiring you to complete missions before the alarm can be dismissed.
+Flutter prototype of a task-based alarm clock. The core idea is that an alarm
+is dismissed only after the user completes a selected mission, such as a math
+exercise, QR scan, typing task, or movement challenge. The repository focuses
+on application logic, screens, missions, local state, and Android alarm
+integration; it is not presented as a finished store-ready release.
 
 ## Features
 
